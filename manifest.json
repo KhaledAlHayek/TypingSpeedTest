@@ -1,0 +1,20 @@
+{
+  "name": "Typing Speed Test",
+  "short_name": "TypingSpeed - Khaled Ali Hayek",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0078d7",
+  "theme_color": "#009688",
+  "description": "Test how faster you are by typing words in different levels.",
+  "icons": [
+    {"src": "/imgs/icons/icon-72x72.png","purpose": "any", "sizes": "72x72", "type": "image/png"},
+    {"src": "/imgs/icons/icon-96x96.png","purpose": "any", "sizes": "96x96", "type": "image/png"},
+    {"src": "/imgs/icons/icon-128x128.png","purpose": "any", "sizes": "128x128", "type": "image/png"},
+    {"src": "/imgs/icons/icon-144x144.png","purpose": "any", "sizes": "144x144", "type": "image/png"},
+    {"src": "/imgs/icons/icon-152x152.png","purpose": "any", "sizes": "152x152", "type": "image/png"},
+    {"src": "/imgs/icons/icon-192x192.png","purpose": "any", "sizes": "192x192", "type": "image/png"},
+    {"src": "/imgs/icons/icon-384x384.png","purpose": "any", "sizes": "384x384", "type": "image/png"},
+    {"src": "/imgs/icons/icon-512x512.png","purpose": "any", "sizes": "512x512", "type": "image/png"}
+  ]
+}

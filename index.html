@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Speed Test Game</title>
+  <link rel="stylesheet" href="dist/css/main.css">
+  <link rel="stylesheet" href="fonts/saira.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <meta name="description" content="Test how faster you are by typing words in different levels.">
+  <!-- manifest -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#009688">
+  <!-- ios support for [icons, theme_color] -->
+  <link rel="apple-touch-icon" href="imgs/icon 96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#009688">
+</head>
+<body>
+  <div class="game">
+    <header>
+      <div class="header-holder">
+        <h1>Typing speed test game</h1>
+        <div class="config">
+          <div class="game-setting" data-target="settings">
+            <i class="fas fa-cog"></i>
+            <div class="tooltip">
+              settings
+            </div>
+          </div>
+          <div class="history">
+            <i class="fas fa-history"></i>
+            <div class="tooltip">
+              history
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="levels">
+        you are playing on <span class="level"></span> level and you have <span class="level-seconds"></span> seconds to type the word
+      </div>
+      <div class="start-holder">
+        <div class="game-starts-after">
+          <div class="icon">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <div class="text">
+            The game will start after <span class="after-seconds">5</span> seconds
+          </div>
+        </div>
+      </div>
+      <div class="start">start playing</div>
+      <div class="random-word"></div>
+      <input type="text">
+      <div class="upcoming-words"></div>
+    </div>
+  </div>
+  <div class="time-score-holder">
+    <div class="timer">
+      <div class="title">
+        time left
+      </div>
+      <div class="timer-icon">
+        <i class="fa fa-clock"></i>
+      </div>
+      <div class="time-left">0</div>
+    </div>
+    <div class="scores">
+      <div class="score-icon">
+        <i class="fas fa-dot-circle"></i>
+      </div>
+      <div class="hints">
+        <div class="my-score">
+          <div class="hint">Score</div>
+          <span class="score">0</span>
+        </div>
+        <div class="words-total">
+          <div class="hint">From</div>
+          <span class="total">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="win">
+    <div class="msg">
+      <div class="describe-icon">
+        <i class="fas fa-check-circle"></i>
+      </div>
+      <div class="win-option">
+        <div class="text">Winning isn’t everything, it’s the only thing.</div>
+        <div class="great">
+          <div class="great-btn" data-target="win">Great</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="lose">
+    <div class="msg">
+      <div class="describe-icon">
+        <i class="fas fa-times-circle"></i>
+      </div>
+      <div class="lose-option">
+        <div class="text">Losing is part of the game. If you never lose, you are never truly tested, and never forced to grow.</div>
+        <div class="try-again">
+          <div class="try-again-btn" data-target="lose">Try again</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="settings may-overflow">
+    <div class="close" data-target="settings">
+      <i class="fas fa-times"></i>
+    </div>
+    <div class="setting">
+      <div class="head">
+        Settings
+      </div>
+      <div class="body">
+        <div class="game-level">
+          <div class="setting-name">
+            <h3>Game Level: </h3>
+          </div>
+          <div class="setting-config" data-target="the-levels" data-icon="arrow">
+            <h4 class="placeholder">Select Game Level</h4>
+            <div class="arrow">
+              <i class="fas fa-angle-down"></i>
+            </div>
+            <div class="the-levels">
+              <ul>
+                <li>Easy</li>
+                <li>Medium</li>
+                <li>Hard</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="game-instructions">
+          <h3>Instructions: </h3>
+          <div class="instructions">
+            <ul>
+              <li>The game contains <span>three different levels</span></li>
+              <li>Each of the levels is different from the others, there are <span>Easy</span>, <span>Medium</span> and <span>Hard</span></li>
+              <li>Each stage contains <span>20 words</span> and a dedicated <span>time of seconds</span> to write it</li>
+              <li>You just have to try to write the word as it is or you will <span>lose the game</span></li>
+              <li>In the easy level, writing each word that consists of <span>6 letter</span> should not exceed <span>5 seconds</span></li>
+              <li>At the intermediate level, writing each word that consists of <span>8 letter</span> should not exceed <span>3 seconds</span></li>
+              <li>In the difficult stage, you only have <span>2 seconds</span> to write the word that consists of <span>10 letters</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="dist/js/app.js"></script>
+  <script src="dist/js/main-min.js"></script>
+</body>
+</html>
