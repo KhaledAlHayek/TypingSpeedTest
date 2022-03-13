@@ -1,4 +1,4 @@
-# Chat Application Using Web Sockets
+# Typing Speed Test Game
 please follow this instructions if you wish to download and edit my project, otherwise you app will crash
 
 ## install all the dependencies required
